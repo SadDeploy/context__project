@@ -133,6 +133,17 @@ ol {
   }
 }
 
+// font size
+.text--lg {
+  font-size: $font-size-large;
+}
+.text--md {
+  font-size: $font-size-medium;
+}
+.text--sm {
+  font-size: $font-size-small;
+}
+
 
 // Blockquotes
 blockquote {

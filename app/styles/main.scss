@@ -1,14 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800,600|Open+Sans+Condensed:700&subset=latin,cyrillic-ext);
 // Styles
 // ------------------------------------
 
 // first of all. Choose your options
 $debug-mode:                              false!default;
-$use-breadcrumb:                          true!default;
+$use-breadcrumb:                          false!default;
 $use-pagination:                          false!default;
 $use-pager:                               false!default;
 $use-btn-group:                           false!default;
-$use-input-group:                         true!default;
+$use-input-group:                         false!default;
 $use-split:                               false!default;
 $use-rules:                               false!default;
 $use-this-or-this:                        false!default;
@@ -16,11 +16,11 @@ $use-has-feedback:                        false!default;
 $use-color-text:                          false!default;
 $use-color-table:                         false!default;
 $use-column-table:                        false!default;
-$use-flexbox:                             false!default;
-$use-adaptive:                            false!default;
+$use-flexbox:                             true!default;
+$use-adaptive:                            true!default;
 
 // plugins
-$use-animations:                          false!default;
+$use-animations:                          true!default;
 
 // Variables
 @import "_variables";

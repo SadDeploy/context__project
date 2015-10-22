@@ -9,18 +9,21 @@
 
   &:focus,
   &.focus {
-    color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 25%);
+    color: $background;
+    background-color: $color;
+        border-color: $border;
   }
   &:hover {
     color: $color;
+    font-weight: 500;
     background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
+        border-color: darken($border, 10%);
   }
   &:active,
-  &.active,
-  .open > &.dropdown-toggle {
+  &.active{
+    color: $background;
+    background-color: $color;
+    border-color: $border;
     background-image: none;
   }
 }

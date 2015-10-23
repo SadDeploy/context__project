@@ -44,6 +44,12 @@ a {
   }
 }
 
+.p-relative {
+  position: relative;
+}
+.index {
+  z-index: 1;
+}
 // Images
 img {
   max-width: 100%;

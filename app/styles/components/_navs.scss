@@ -20,10 +20,11 @@
       position: relative;
       display: block;
       padding: $nav-link-padding;
+      color: $lighter;
       &:hover,
       &:focus {
-        text-decoration: none;
-        background-color: $nav-link-hover-bg;
+        text-decoration: underline;
+        //background-color: $nav-link-hover-bg;
       }
     }
   }

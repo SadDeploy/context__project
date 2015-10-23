@@ -11,7 +11,7 @@ $gray-light:             lighten($gray-base, 46.7%); // #777
 $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 $lighter:                #fff;
 
-$brand:                 #2c2c2c;
+$brand:                  #2c2c2c;
 $brand-primary:          #62a0d7;
 $brand-success:          #50ba72;
 $brand-info:             #f4f4f4;
@@ -42,13 +42,13 @@ $link-decoration:         none;
 // Typography
 $font-size-base:          $base-font-size !default;
 $font-size-large:         ceil(($base-font-size * 1.25)) !default; // ~18px
-$font-size-medium:        ceil(($base-font-size * 1)) !default; // ~16px
-$font-size-small:         ceil(($base-font-size * 0.85)) !default; // ~12px
+$font-size-medium:        ceil(($base-font-size * 1.06666)) !default; // ~16px
+$font-size-small:         ceil(($base-font-size * 0.86666)) !default; // ~13px
 
 
-$font-size-h1:             floor(($base-font-size * 2)); // ~30px
-$font-size-h2:             floor(($base-font-size * 1.6)); // ~24px
-$font-size-h3:             ceil(($base-font-size * 1.4)); // ~21px
+$font-size-h1:             floor(($base-font-size * 3.2)); // ~48px
+$font-size-h2:             floor(($base-font-size * 2.4)); // ~36px
+$font-size-h3:             ceil(($base-font-size * 2)); // ~30px
 $font-size-h4:             ceil(($base-font-size * 1.25)); // ~18px
 $font-size-h5:             $base-font-size;
 $font-size-h6:             ceil(($base-font-size * 0.85)); // ~12px
@@ -58,9 +58,9 @@ $line-height-computed:     floor(($base-font-size * $line-height-base)); // ~22p
 $line-height-computed-half:floor(($base-font-size * $line-height-base) / 2); // ~11px
 
 
-$headings-font-family:     inherit !default;
-$headings-font-weight:     500 !default;
-$headings-line-height:     1.1 !default;
+$headings-font-family:     "Open Sans Condensed", sans-serif !default;
+$headings-font-weight:     700 !default;
+$headings-line-height:     1 !default;
 $headings-color:           inherit !default;
 
 
@@ -98,7 +98,7 @@ $container-tablet:             (720px + $grid-gutter-width);
 $container-md:                 $container-tablet;
 
 // Medium screen / desktop
-$container-desktop:            (940px + $grid-gutter-width);
+$container-desktop:            (960px + $grid-gutter-width);
 //** For `$screen-md-min` and up.
 $container-lg:                 $container-desktop;
 
@@ -108,7 +108,7 @@ $container-large-desktop:      (1140px + $grid-gutter-width);
 $container-xlg:                 $container-large-desktop;
 
 // Btn
-$btn-font-weight:               400;
+$btn-font-weight:                700;
 
 $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
@@ -135,8 +135,8 @@ $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              $btn-danger-bg !default;
 
 // Padding
-$padding-base-vertical:          6px;
-$padding-base-horizontal:        12px;
+$padding-base-vertical:          11px;
+$padding-base-horizontal:        22px;
 
 $padding-large-vertical:         10px;
 $padding-large-horizontal:       16px;
@@ -243,8 +243,8 @@ $navbar-default-link-disabled-bg:          transparent;
 
 
 // Navs
-$nav-link-padding:                          10px 15px;
-$nav-link-hover-bg:                         $gray-lighter;
+$nav-link-padding:                          5px 8px;
+$nav-link-hover-bg:                         transparent;
 
 $nav-tabs-active-link-hover-bg:             $base-background;
 $nav-tabs-active-link-hover-color:          $gray;
@@ -277,19 +277,19 @@ $input-group-addon-bg:           $gray-lighter !default;
 $input-group-addon-border-color: $input-border !default;
 
 
-$state-success-text:             #3c763d !default;
+$state-success-text:             $brand-success !default;
 $state-success-bg:               #dff0d8 !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
-$state-info-text:                #31708f !default;
+$state-info-text:                $brand-info !default;
 $state-info-bg:                  #d9edf7 !default;
 $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
 
-$state-warning-text:             #8a6d3b !default;
+$state-warning-text:             $brand-warning !default;
 $state-warning-bg:               #fcf8e3 !default;
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
 
-$state-danger-text:              #a94442 !default;
+$state-danger-text:              $brand-danger !default;
 $state-danger-bg:                #f2dede !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 

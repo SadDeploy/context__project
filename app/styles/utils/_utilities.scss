@@ -27,6 +27,9 @@
 @mixin padbot($bottom) {
   padding-bottom: $bottom;
 }
+@mixin margleft($left) {
+  margin-left: $left;
+}
 @mixin margright($right) {
   margin-right: $right;
 }

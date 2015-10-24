@@ -40,16 +40,24 @@ a {
 
   &:hover,
   &:focus {
-    color: $link-hover-color;
+    text-decoration: underline;
   }
 }
 
+.d-inline {
+  display: inline-block;
+}
+.middle {
+  vertical-align: top;
+  line-height: 2;
+}
 .p-relative {
   position: relative;
 }
 .index {
   z-index: 1;
 }
+
 // Images
 img {
   max-width: 100%;

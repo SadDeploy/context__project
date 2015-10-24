@@ -22,7 +22,7 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: .8em;
   text-align: center;
   font-variant: normal;
   text-transform: none;
@@ -31,5 +31,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-lg {
+  font-size: 18px;
+}
+.icon-2x {
+  font-size: 2em;
+}
 .icon-ok:before { content: '\e800'; } /* '' */
+.icon-phone:before { content: '\e801'; } /* '' */
+.icon-cancel:before { content: '\e802'; } /* '' */
+.icon-rouble:before { content: '\e803'; } /* '' */
+.icon-user:before { content: '\e804'; } /* '' */
+.icon-mail:before { content: '\e805'; } /* '' */
+.icon-chart-line-1:before { content: '\e807'; } /* '' */

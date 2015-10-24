@@ -1,93 +1,384 @@
 extends layouts/_default
 block content
     - var title = { description: 'Заголовок' }
-    #reasons
+    .reasons
         .container
             h2.text--center Узнайте, с помощью чего мы приведем вам
                 br
                 span.text--success максимум заказов
                 |  по минимальной цене
             .row.beetwen-xs
-                .col-sm-4.reason__block
+                .col-xs-12.col-lg-4.reason__block
                     span.reasons-counter 1
                     h3.reasons__title.margtop60 Долгосрочная
-                        br
-                        | стратегия
-                        br
-                        | под ваш бюджет
+                        span  стратегия
+                        span  под ваш бюджет
                     p.text--sm Передовая настройка рекламы находит в Интернете вообще всех людей, которым интересен ваш товар. Даже если они об этом еще не знают
-                .col-sm-4.reason__block
+                .col-xs-12.col-lg-4.reason__block
                     span.reasons-counter 2
                     h3.reasons__title.margtop60 Быстрая
-                        br
-                        | окупаемость
+                        span  окупаемость
                     p.text--sm В среднем, затраты на нашу настройку окупаются  от 2-х до 6-ти месяцев
-                .col-sm-4.reason__block
+                .col-xs-12.col-lg-4.reason__block
                     span.reasons-counter 3
                     h3.reasons__title.margtop60 Сертифи-
-                        br
-                        | цированные
-                        br
-                        | специалисты
+                        span  цированные
+                        span  специалисты
                     p.text--sm Передовая настройка рекламы находит в Интернете вообще всех людей, которым интересен ваш товар. Даже если они об этом еще не знают
-                div
-                    img(src="images/reasons__back.jpg", alt="")
-                .col-sm-4.reason__block
+                .background-elem.p-relative.hidden--xs.visible-md
+                    .background__photo-2.text--center
+                        img(src="images/reasons__back.jpg", alt="")
+                .col-xs-12.col-lg-4.reason__block
                     span.reasons-counter 4
                     h3.reasons__title.margtop60 Постоянная
-                        br
-                        | оптимизация
-                        br
-                        | прибыли
+                        span  оптимизация
+                        span  прибыли
                     p.text--sm Селекция бренда стремительно отталкивает конструктивный рекламоноситель. соответствии с законом Ципфа
-                .col-sm-4.reason__block
+                .col-xs-12.col-lg-4.reason__block
                     span.reasons-counter 5
                     h3.reasons__title.margtop60 Маркетинговый
-                        br
-                        | подход
+                        span  подход
                     p.text--sm В соответствии с законом Ципфа, медиамикс допускает из ряда вон выходящий рекламный бриф. Построение
-                .col-sm-4.reason__block
+                .col-xs-12.col-lg-4.reason__block
                     span.reasons-counter 6
                     h3.reasons__title.margtop60 Дотошная
-                        br
-                        | веб-аналитика
+                        span  веб-аналитика
                     p.text--sm Построение бренда, не меняя концепции, изложенной выше, сознательно усиливает стратегический рекламный бриф, опираясь на опыт
-
-
-    #services.services.margtop70
+            .text--center.margtop30
+                a.btn.btn--success(href="#")
+                     i.icon-phone.icon-lg
+                     | заказать звонок
+    #reviews.reviews
         .container
-            h2.text--center Услуги
+            h2.text--center.margbot50 Прочитайте отзывы
+                br
+                | наших довольных клиентов
+            .reviews-element
+                .row.middle-xs
+                    .col-md-1.col-xs-3
+                        img.avatar(src="images/avatara-1.jpg", alt="")
+                    .col-md-6.col-xs-9
+                        p.margleft10 Ирина Гусева
+                            span.text--info  предприниматель
+                            br
+                            | Бизнес: оптовая продажа текстиля
+                    .col-md-5.col-xs-12
+                        ul.list--inline
+                            li
+                                a(href="#")
+                                    img(src="icons/vk.png", alt="")
+                            li
+                                a(href="#")
+                                    img(src="icons/google.png", alt="")
+                            li
+                                a(href="#")
+                                    img(src="icons/twitter.png", alt="")
+                            li.middle Свяжитесь с Ирой
+                    h2.text--success.text--left «Заказов стало больше, чем можем обработать!»
+                    .col-md-7.col-xs-12
+                        p Разработка медиаплана существенно специфицирует конструктивный клиентский спрос, не считаясь с затратами. Как отмечает Майкл Мескон, инвестиция позиционирует
+                            |  типичный анализ зарубежного опыта.
+                    .col-md-1 &nbsp;
+                    .col-md-4.col-xs-12
+                        a.btn.btn--danger.btn--block(href="#") Хочу так же!
+            .reviews-element
+                .row.middle-xs
+                    .col-md-1.col-xs-3
+                        img.avatar(src="images/avatara-2.jpg", alt="")
+                    .col-md-6.col-xs-9
+                        p.margleft10 Валентин Александров
+                            span.text--info  маркетолог
+                            br
+                            | Бизнес: сеть ресторанов быстрого питания
+                    .col-md-5.col-xs-12
+                        ul.list--inline
+                            li
+                                a(href="#")
+                                    img(src="icons/facebook.png", alt="")
+                            li
+                                a(href="#")
+                                    img(src="icons/youtube.png", alt="")
+                            li
+                                a(href="#")
+                                    img(src="icons/odnoklassniki.png", alt="")
+                            li.middle Свяжитесь с Валентином
+                    h2.text--success.text--left «Приятно работать с профессионалами!»
+                    .col-md-7.col-xs-12
+                        p SWOT-анализ, анализируя результаты рекламной кампании, искажает комплексный департамент маркетинга и продаж, используя опыт предыдущих кампаний. Социальный статус обычно правомочен.
+                    .col-md-1 &nbsp;
+                    .col-md-4.col-xs-12
+                        a.btn.btn--danger.btn--block(href="#") Хочу так же!
+            .reviews-element
+                .row.middle-xs
+                    .col-md-1.col-xs-3
+                        img.avatar(src="images/avatara-3.jpg", alt="")
+                    .col-md-6.col-xs-9
+                        p.margleft10 Владимир Воскобойников
+                            span.text--info  директор компании
+                            br
+                            | Бизнес: охранное агентство
+                    .col-md-5.col-xs-12
+                        ul.list--inline
+                            li
+                                a(href="#")
+                                    img(src="icons/vk.png", alt="")
+                            li.middle Свяжитесь с Владимиром
+                    h2.text--success.text--left «Доверился — и не пожалел»
+                    .col-md-7.col-xs-12
+                        p Разработка медиаплана существенно специфицирует конструктивный клиентский спрос, не считаясь с затратами. Как отмечает Майкл Мескон, инвестиция позиционирует
+                            | типичный анализ зарубежного опыта.
+                    .col-md-1 &nbsp;
+                    .col-md-4.col-xs-12
+                        a.btn.btn--danger.btn--block(href="#") Хочу так же!
+    .results.text--center
+        .container
+            h2.margbot50 Посмотрите, как росли их продажи!
+            img(src="images/notebook.png", alt="")
+            h2.results__title.reasons__text Хотите узнать, каких результатов
+                span  вы можете добиться с нами?
+            p.margbot50.reasons__text Закажите бесплатный прогноз по контекстной рекламе и наш менеджер
+                span  скурпулезно просчитает, сколько  клиентов в вашем бизнесе
+                span  и по какой цене вы можете получить с контекстной рекламы
+            a.btn.btn--danger(href="#")
+                i.icon-chart-line-1.icon-lg
+                | заказать прогноз
+    #plans.plans.text--center
+        .container
+            h2.margbot50 Выберите тарифный план
+            .row.between-xs.top-xs
+                section.col-md-3.col-sm-6.col-xs-12
+                    .plan__tier-main.text--left
+                        h5 &nbsp;
+                        ul.list--unstyled
+                            li Реклама в системах
+                            li Ключевых слов
+                            li Создание уникального торгового предложения
+                            li Аудит сайта
+                            li Тестирование текстов
+                            li Индивидуальный
+                                | заголовок для ключей
+                            li Настройка систем
+                                | аналитики под ключ
+                            li Ретаргетинг
+                            li Околоцелевые кампании
+                            li Персональный менеджер
+                            li Ведение
+                section.col-md-3.col-sm-6.col-xs-12
+                    .plan__tier.text--center.margleft10.margright10
+                        .plan__tier-header
+                            h5.text--uppercase Продвинутый
+                        .plan__tier-body
+                            ul.list--unstyled
+                                li Яндекс и Google
+                                li Неограничено
+                                li
+                                    i.icon-ok.text--success.icon-2x
+                                li
+                                    i.icon-ok.text--success.icon-2x
+                                li
+                                    i.icon-ok.text--success.icon-2x
+                                li
+                                    i.icon-ok.text--success.icon-2x
+                                li Яндекс. Метрика и Google Analytics
+                                li В Яндекс. Директ и Google AdWords
+                                li
+                                    i.icon-ok.text--success.icon-2x
+                                li
+                                    i.icon-ok.text--success.icon-2x
+                                li 60 дней
+                        .plan__tier-footer
+                            h2 22 846 Р
+                            p.reasons__text
+                                b.text--md + скидка
+                                span  5600 Р на создание
+                                span  Landing Page
+                            a.btn.btn--success.margtop20(href="#") Заказать
+                section.col-md-3.col-sm-6.col-xs-12
+                    .plan__tier.text--center.margleft10.margright10
+                        .plan__tier-header
+                            h5.text--uppercase Профессиональный
+                        .plan__tier-body
+                            ul.list--unstyled
+                                li Яндекс и Google
+                                li До 1 000
+                                li
+                                    i.icon-cancel.text--danger.icon-2x
+                                li
+                                    i.icon-ok.text--success.icon-2x
+                                li
+                                    i.icon-ok.text--success.icon-2x
+                                li
+                                    i.icon-ok.text--success.icon-2x
+                                li Яндекс. Метрика
+                                    br
+                                    br
+                                li В Яндекс. Директ
+                                    br
+                                li
+                                    i.icon-cancel.text--danger.icon-2x
+                                li
+                                    i.icon-cancel.text--danger.icon-2x
+                                li 8 дней
+                        .plan__tier-footer
+                            h2 13 543 Р
+                            p.reasons__text
+                                b.text--md + подарок
+                                span  1000 Р на счет
+                                span  Google Adwords
+                            a.btn.btn--success.margtop20(href="#") Заказать
+                section.col-md-3.col-sm-6.col-xs-12
+                    .plan__tier.text--center.margleft10.margright10
+                        .plan__tier-header
+                            h5.text--uppercase Стартовый
+                        .plan__tier-body
+                            ul.list--unstyled
+                                li Яндекс
+                                li До 300
+                                li
+                                    i.icon-cancel.text--danger.icon-2x
+                                li
+                                    i.icon-cancel.text--danger.icon-2x
+                                li
+                                    i.icon-cancel.text--danger.icon-2x
+                                li
+                                    i.icon-cancel.text--danger.icon-2x
+                                li
+                                    i.icon-cancel.text--danger.icon-2x
+                                li
+                                    i.icon-cancel.text--danger.icon-2x
+                                li
+                                    i.icon-cancel.text--danger.icon-2x
+                                li
+                                    i.icon-cancel.text--danger.icon-2x
+                                li
+                                    i.icon-cancel.text--danger.icon-2x
+                        .plan__tier-footer
+                            h2 5371 Р
+                            a.btn.btn--success.margtop20(href="#") Заказать
+            h2.text--danger Внимание! Акция!
+            p.reasons__text
+                b ДО 12 ОКТЯБРЯ!
+                |  Закажите любой тарифный план
+                span  и получите
+                    b  СКИДКУ 44%
+                    |  на 10 месяцев ведения!
+            a.btn.btn--danger.margtop20(href="#") получить скидку
+    #projects.projects
+        .container
+            h2.text--center.margbot50 Узнайте, как мы будем работать с вами!
+            .row.middle-xs.around-xs.p-relative
+                .background__photo-3.hidden--xs.visible-md
+                    img(src="images/lines.png", alt="")
+                .col-md-3.col-sm-6.col-xs-12
+                    .projects-elem.elem--success
+                        h4.reasons__text Оставляете
+                            span  заявку
+                .col-md-3.col-sm-6.col-xs-12
+                    .projects-elem.elem--shadow
+                        h4.reasons__text С вами
+                            span  связывается
+                            span  наш менеджер
+                .col-md-3.col-sm-6.col-xs-12
+                    .projects-elem.elem--shadow
+                       h4.reasons__text Мы делаем
+                           span  прогноз продаж
+                           span  для вашего бизнеса
+                .col-md-3.col-sm-6.col-xs-12
+                    .projects-elem.elem--shadow
+                        h4.reasons__text Создаем стратегию
+                            span  продвижения
+                            span  под ваш бюджет
+                .col-md-3.col-sm-6.col-xs-12
+                    .projects-elem.elem--shadow
+                        h4.reasons__text В течении 7 дней
+                            span  мы создаем вашу
+                            span  рекламную
+                            span  кампанию
+                .col-md-3.col-sm-6.col-xs-12
+                    .projects-elem.elem--shadow
+                        h4.reasons__text Подписываем
+                            span  договор
+                .col-md-3.col-sm-6.col-xs-12
+                    .projects-elem.elem--success
+                        h4.reasons__text Вы выбираете
+                            span  тарифный план
+                .col-md-3.col-sm-6.col-xs-12
+                    .projects-elem.elem--shadow
+                        h4.reasons__text Согласовываем
+                            span  прогноз
+                            span  и стратегию
+                .col-md-3.col-sm-6.col-xs-12
+                    .projects-elem.elem--shadow
+                        h4.reasons__text Сдаем итоговую
+                            span  работу
+                            span  на согласование
+                .col-md-3.col-sm-6.col-xs-12
+                    .projects-elem.elem--success
+                        h4.reasons__text Вы пополняете
+                            span  бюджет кампаний
+                .col-md-3.col-sm-6.col-xs-12
+                    .projects-elem.elem--shadow
+                        h4.reasons__text Запускаем
+                            span  рекламу
+                .col-md-3.col-sm-6.col-xs-12
+                    .projects-elem.elem--success
+                        h4.reasons__text Вы получаете
+                            span  заказы
+            .text--center
+                a.btn.btn--danger.margtop20.margbot20(href="#") Хочу обсудить свой проект!
+    #feedback.feedback.text--center
+        .container
+            h2 Остались вопросы?
+            p.margbot50 Задайте нам их!
             .row.around-xs
-                .col-xs-12
-        .container
-            h2 Отзывы наших клиентов
-            .row.around-xs
-                .col-xs-12
-    #partners.partners.text--center
-        .container
-            h2 Наши партнеры
-            .row.around-xs.margtop50
-                - for (var x = 1; x <= 6; x++)
-                .col-xs-2
-                    img(src="images/partners__0#{x}.png", alt="")
-    #googlemap.googlemap.p-relative
-        .googlemap__address
-            .googlemap__address-item.text--center
-                p
-                    b Наш адрес:&nbsp;
+                .col-md-10
+                    form(action="", method="post")
+                        .row.top-xs.between-xs
+                            .col-md-5.col-xs-12.text--left
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        i.icon-user
+                                    input.form-control(type="text", placeholder="Имя")
+                                .form-group.input-group
+                                    span.input-group-addon
+                                        i.icon-mail
+                                    input.form-control(type="email", placeholder="E-Mail")
+                                .form-group.capcha
+                                    img(src="images/capcha.jpg", alt="")
+                                .form-group
+                                    input.btn.btn--danger.btn--block(type="submit", value="Задать вопрос")
+                            .col-md-7.col-xs-12
+                                textarea.form-control(placeholder="Текст сообщения", rows="12")
+    .googlemap.p-relative
+        .googlemap__address.container
+            .googlemap__address-item
+                h2 Приходите
                     br
-                    | Санкт-Петербург,&nbsp;
-                    | Щербаков пер., 12
-                p
-                    b График работы:&nbsp;
+                    |  знакомиться!
+                h4.margtop30 8 (800) 333-33-33
                     br
-                    | ежедневно с 9:00 до 21:00
-                p
-                    b Сайт:&nbsp;
-                    | www.flyp.ru
-                    br
-                    b Телефон:&nbsp;
-                    | 8 (812) 407-16-50
-                    br
-                    b E-mail:&nbsp;
-                    | operator@flycopy.ru
+                    |  Красной Армии, 7А
+        //#map(style="width:100%; height: 662px;")
+        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2173.3404653094303!2d40.975078316311965!3d56.99435498090367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13" +
+        ".1!3m3!1m2!1s0x414d143d41a6faed%3A0xf7d51ff625359c2a!2z0YPQuy4g0JrRgNCw0YHQvdC-0Lkg0JDRgNC80LjQuCwgN9CQLCDQmNCy0LDQvdC-0LLQviwg0JjQstCw0L3QvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTUzMDAw" +
+        "!5e0!3m2!1sru!2sru!4v1445691831077", width="100%", height="580", frameborder="0", style="pointer-events: none;", allowfullscreen)
+    .social.text--center
+        ul.list--inline
+            li
+                a(href="#")
+                    img(src="icons/vk.png", alt="")
+            li
+                a(href="#")
+                    img(src="icons/google.png", alt="")
+            li
+                a(href="#")
+                    img(src="icons/twitter.png", alt="")
+            li
+                a(href="#")
+                    img(src="icons/facebook.png", alt="")
+            li
+                a(href="#")
+                    img(src="icons/youtube.png", alt="")
+            li
+                a(href="#")
+                    img(src="icons/odnoklassniki.png", alt="")

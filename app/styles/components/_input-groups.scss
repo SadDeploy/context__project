@@ -45,14 +45,14 @@
   // Text input groups
   // -------------------------
   .input-group-addon {
-    padding: $padding-base-vertical $padding-base-horizontal;
+    padding: $padding-base-vertical 5px $padding-base-vertical 15px;
     font-size: $font-size-base;
     font-weight: normal;
     line-height: 1;
     color: $input-color;
     text-align: center;
     background-color: $input-group-addon-bg;
-    border: 1px solid $input-group-addon-border-color;
+    border-right: 10px solid $input-group-addon-border-color;
     border-radius: $border-radius-base;
 
     // Sizing
@@ -83,7 +83,7 @@
     @include border-right-radius(0);
   }
   .input-group-addon:first-child {
-    border-right: 0;
+//    border-right: 0;
   }
   .input-group .form-control:last-child,
   .input-group-addon:last-child,

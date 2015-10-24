@@ -27,15 +27,29 @@ th {
     > td {
       padding: $table-cell-padding;
       line-height: $line-height-base;
-      vertical-align: top;
-      border-top: 1px solid $table-border-color;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 16px;
+      color: #2c2c2c;
+//      box-shadow: 8.5px 14.7px 32px rgba(44, 44, 44, 0.08);
+      margin: 0 10px;
+      &:first-child {
+        text-align: left;
+
+        background-color: $brand-info;
+      }
     }
   }
+  col {box-shadow: 8.5px 14.7px 32px rgba(44, 44, 44, 0.08);}
   // Bottom align for column headings
   > thead > tr > th {
-    vertical-align: top;
-    text-align: center;
-    border-bottom: 2px solid $table-border-color;
+    font-family: "Open Sans Condensed";
+    font-size: 21px;
+    font-weight: 700;
+    background-color: $brand-info;
+  }
+  > tbody > tr > td {
+    background-color: $base-background;
   }
   // Account for multiple tbody instances
   > tbody + tbody {
@@ -113,23 +127,23 @@ table {
 }
 
 // Cell alignments
-[colspan]{
-  text-align:center;
-}
-[colspan="1"]{
-  text-align:left;
-}
-[rowspan]{
-  vertical-align:middle;
-}
-[rowspan="1"]{
-  vertical-align:top;
-}
-.numerical{
-  text-align:right;
-}
-
 @if $use-column-table == true {
+  [colspan]{
+    text-align:left;
+  }
+  [colspan="1"]{
+    text-align:left;
+  }
+  [rowspan]{
+    vertical-align:middle;
+  }
+  [rowspan="1"]{
+    vertical-align:top;
+  }
+  .numerical{
+    text-align:right;
+  }
+
   //col and colgroup
   //<colgroup>
   //  <col class=t10>

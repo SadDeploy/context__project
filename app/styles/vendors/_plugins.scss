@@ -1,0 +1,50 @@
+//
+// Plugins
+// ------------------------------------
+
+.tabs {
+  padding-top: 56.25%;
+  background-image: url("../images/notebook.png");
+  //position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.tabs_inner {
+  padding: 70px 155px 208px 146px;
+  position: relative;
+  z-index: 1;
+  &-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+}
+.tabs__caption {
+  border: 3px solid $brand-success;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: #2c2c2c;
+  li {
+    cursor: pointer;
+    padding: 0 25px;
+    position: relative;
+    &.active:after {
+      content: '';
+      position: absolute;
+      background: url("../images/angle.png") no-repeat center;
+      width: 22px;
+      height: 12px;
+      bottom: -22px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+}
+.tabs__content {
+  display: none;
+}
+.tabs__content.active {
+  display: block;
+}

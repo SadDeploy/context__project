@@ -265,7 +265,7 @@ $input-border-radius:            $border-radius-base !default;
 $input-border-radius-large:      $border-radius-large !default;
 $input-border-radius-small:      $border-radius-small !default;
 
-$input-border-focus:             #66afe9 !default;
+$input-border-focus:             #54b365 !default;
 $input-color-placeholder:        #999 !default;
 
 $input-height-base:              50px !default;
@@ -274,7 +274,7 @@ $input-height-small:             (floor($font-size-small * $line-height-small) +
 
 
 $input-group-addon-bg:           $lighter !default;
-$input-group-addon-border-color: $brand-info !default;
+$input-group-addon-border-color: transparent !default;
 
 
 $state-success-text:             $brand-success !default;
@@ -293,7 +293,7 @@ $state-danger-text:              $brand-danger !default;
 $state-danger-bg:                #f2dede !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 
-$form-group-margin-bottom:       15px !default;
+$form-group-margin-bottom:       10px !default;
 
 $legend-color:                   $gray-dark !default;
 $legend-border-color:            #e5e5e5 !default;

@@ -39,13 +39,12 @@
   .input-group-btn {
     width: 1%;
     white-space: nowrap;
-    vertical-align: middle; // Match the inputs
+    vertical-align: top; // Match the inputs
   }
 
   // Text input groups
   // -------------------------
   .input-group-addon {
-    padding: $padding-base-vertical 5px $padding-base-vertical 15px;
     font-size: $font-size-base;
     font-weight: normal;
     line-height: 1;
@@ -71,6 +70,11 @@
     input[type="radio"],
     input[type="checkbox"] {
       margin-top: 0;
+    }
+    i {
+      background-color: #f7f7f7;
+      padding: 17px 5px 17px 15px;
+      display: block;
     }
   }
 

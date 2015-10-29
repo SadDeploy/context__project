@@ -56,3 +56,16 @@
     z-index: 1;
   }
 }
+
+.fancybox-outer {
+  .form-control {
+    background-color: #f7f7f7;
+    box-shadow: none;
+  }
+  .form-group {
+    margin-right: 0;
+  }
+  .input-group-addon i {
+    background-color: #f7f7f7;
+  }
+}

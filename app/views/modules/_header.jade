@@ -1,18 +1,18 @@
 header
     .header__top
         .container
-            .row.between-xs.middle-xs
+            .row.between-xs.middle-xs.navbar.anchor(role="navigation")
                 .col.logo
                     a(href="/")
                         img(src="images/logo.png", alt="Logo")
-                .col
+                .col.navigation
                     include _navbar
                 .col.phone
                     a.text--info(href="tel:88003333333")
                         i.icon-phone.text--success
                         |  8 (800) 333-33-33
                 .col
-                    a(href="#")
+                    a.navbar-toggle(href="#", data-toggle='collapse', data-target='.navbar-ex1-collapse')
                         img(src="images/state.png", alt="State")
     .header__bottom
         .container.p-relative

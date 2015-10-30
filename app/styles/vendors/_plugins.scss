@@ -3,14 +3,18 @@
 // ------------------------------------
 
 .tabs {
-  padding-top: 56.25%;
-  background-image: url("../images/notebook.png");
-  //position: relative;
-  background-size: cover;
-  background-position: center center;
+ // padding-top: 56.25%;
+  //background-image: url("../images/notebook.png");
+  position: relative;
+  //background-size: cover;
+  //background-position: center center;
 }
 .tabs_inner {
-  padding: 70px 155px 208px 146px;
+  //padding: 70px 155px 208px 146px;
+  margin: auto;
+  width: 62%;
+  padding-top: 5%;
+  padding-bottom: 16%;
   position: relative;
   z-index: 1;
   &-img {
@@ -27,19 +31,9 @@
   color: #2c2c2c;
   li {
     cursor: pointer;
-    padding: 0 25px;
+    padding: 0 22px;
     position: relative;
-    &.active:after {
-      content: '';
-      position: absolute;
-      background: url("../images/angle.png") no-repeat center;
-      width: 22px;
-      height: 12px;
-      bottom: -22px;
-      left: 0;
-      right: 0;
-      margin: auto;
-    }
+    &.active{color: $brand-success}
   }
 }
 .tabs__content {

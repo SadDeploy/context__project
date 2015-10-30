@@ -7,4 +7,40 @@
     width: 466px;
     padding: 10px 70px;
   }
+  .tabs__caption {
+    li {
+      &.active:after {
+        content: '';
+        position: absolute;
+        background: url("../images/angle.png") no-repeat center;
+        width: 22px;
+        height: 12px;
+        bottom: -22px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+@media (max-width: $screen-lg-min) {
+  .tabs__caption {
+    li {
+      font-size: 13px;
+      padding: 0 8px;
+    }
+  }
+}
+@media (max-width: $screen-md-min) {
+  .tabs_inner {
+    padding-top: 9%;
+  }
+  .tabs__caption {
+    display: none;
+    li {
+      font-size: 11px;
+      display: block;
+    }
+  }
+  .navigation {width: 100%;}
 }

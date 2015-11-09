@@ -45,7 +45,7 @@ block content
                         span  веб-аналитика
                     p.text--sm Построение бренда, не меняя концепции, изложенной выше, сознательно усиливает стратегический рекламный бриф, опираясь на опыт
             .text--center.margtop30
-                a.btn.btn--success(href="#")
+                a.btn.btn--success.fancybox(href="#call")
                      i.icon-phone.icon-lg
                      | заказать звонок
     #reviews.reviews
@@ -63,24 +63,24 @@ block content
                             br
                             | Бизнес: оптовая продажа текстиля
                     .col-md-5.col-xs-12
-                        ul.list--inline
-                            li
-                                a(href="#")
-                                    img(src="icons/vk.png", alt="")
-                            li
-                                a(href="#")
-                                    img(src="icons/google.png", alt="")
-                            li
-                                a(href="#")
-                                    img(src="icons/twitter.png", alt="")
-                            li.middle Свяжитесь с Ирой
+                        //ul.list--inline
+                        //    li
+                        //        a(href="#")
+                        //            img(src="icons/vk.png", alt="")
+                        //    li
+                        //        a(href="#")
+                        //            img(src="icons/google.png", alt="")
+                        //    li
+                        //        a(href="#")
+                        //            img(src="icons/twitter.png", alt="")
+                        //    li.middle Свяжитесь с Ирой
                     h2.text--success.text--left «Заказов стало больше, чем можем обработать!»
                     .col-md-7.col-xs-12
                         p Разработка медиаплана существенно специфицирует конструктивный клиентский спрос, не считаясь с затратами. Как отмечает Майкл Мескон, инвестиция позиционирует
                             |  типичный анализ зарубежного опыта.
                     .col-md-1 &nbsp;
                     .col-md-4.col-xs-12
-                        a.btn.btn--danger.btn--block(href="#") Хочу так же!
+                        a.btn.btn--danger.btn--block.fancybox(href="#form") Хочу так же!
             .reviews-element
                 .row.middle-xs
                     .col-md-1.col-xs-3
@@ -91,23 +91,23 @@ block content
                             br
                             | Бизнес: сеть ресторанов быстрого питания
                     .col-md-5.col-xs-12
-                        ul.list--inline
-                            li
-                                a(href="#")
-                                    img(src="icons/facebook.png", alt="")
-                            li
-                                a(href="#")
-                                    img(src="icons/youtube.png", alt="")
-                            li
-                                a(href="#")
-                                    img(src="icons/odnoklassniki.png", alt="")
-                            li.middle Свяжитесь с Валентином
+                        //ul.list--inline
+                        //    li
+                        //        a(href="#")
+                        //            img(src="icons/facebook.png", alt="")
+                        //    li
+                        //        a(href="#")
+                        //            img(src="icons/youtube.png", alt="")
+                        //    li
+                        //        a(href="#")
+                        //            img(src="icons/odnoklassniki.png", alt="")
+                        //    li.middle Свяжитесь с Валентином
                     h2.text--success.text--left «Приятно работать с профессионалами!»
                     .col-md-7.col-xs-12
                         p SWOT-анализ, анализируя результаты рекламной кампании, искажает комплексный департамент маркетинга и продаж, используя опыт предыдущих кампаний. Социальный статус обычно правомочен.
                     .col-md-1 &nbsp;
                     .col-md-4.col-xs-12
-                        a.btn.btn--danger.btn--block(href="#") Хочу так же!
+                        a.btn.btn--danger.btn--block.fancybox(href="#form") Хочу так же!
             .reviews-element
                 .row.middle-xs
                     .col-md-1.col-xs-3
@@ -118,18 +118,18 @@ block content
                             br
                             | Бизнес: охранное агентство
                     .col-md-5.col-xs-12
-                        ul.list--inline
-                            li
-                                a(href="#")
-                                    img(src="icons/vk.png", alt="")
-                            li.middle Свяжитесь с Владимиром
+                        //ul.list--inline
+                        //    li
+                        //        a(href="#")
+                        //            img(src="icons/vk.png", alt="")
+                        //    li.middle Свяжитесь с Владимиром
                     h2.text--success.text--left «Доверился — и не пожалел»
                     .col-md-7.col-xs-12
                         p Разработка медиаплана существенно специфицирует конструктивный клиентский спрос, не считаясь с затратами. Как отмечает Майкл Мескон, инвестиция позиционирует
                             | типичный анализ зарубежного опыта.
                     .col-md-1 &nbsp;
                     .col-md-4.col-xs-12
-                        a.btn.btn--danger.btn--block(href="#") Хочу так же!
+                        a.btn.btn--danger.btn--block.fancybox(href="#form") Хочу так же!
     .results.text--center
         .container
             h2.margbot50 Посмотрите, как росли их продажи!
@@ -157,8 +157,8 @@ block content
     #plans.plans.text--center
         .container
             h2.margbot50 Выберите тарифный план
-            .row.between-xs.top-xs
-                section.col-md-3.col-sm-6.col-xs-12
+            .row.between-xs.top-xs.margbot20
+                section.col-lg-3.col-sm-6.col-xs-12.visible-md.visible-lg.hidden--xs
                     .plan__tier-main.text--left
                         h5 &nbsp;
                         ul.list--unstyled
@@ -175,29 +175,56 @@ block content
                             li Околоцелевые кампании
                             li Персональный менеджер
                             li Ведение
-                section.col-md-3.col-sm-6.col-xs-12
+                section.col-lg-3.col-sm-6.col-xs-12
                     .plan__tier.text--center.margleft10.margright10
                         .plan__tier-header
                             h5.text--uppercase Продвинутый
                         .plan__tier-body
                             ul.list--unstyled
-                                li Яндекс и Google
-                                li Неограничено
                                 li
+                                    span.text--info.hidden--md.hidden--lg Реклама в системах
+                                        br
+                                    |  Яндекс и Google
+                                li
+                                    span.text--info.hidden--md.hidden--lg Ключевых слов
+                                        br
+                                    |  Неограничено
+                                li
+                                    span.text--info.hidden--md.hidden--lg Создание уникального торгового предложения
+                                        br
                                     i.icon-ok.text--success.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Аудит сайта
+                                        br
                                     i.icon-ok.text--success.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Тестирование текстов
+                                        br
                                     i.icon-ok.text--success.icon-2x
                                 li
-                                    i.icon-ok.text--success.icon-2x
-                                li Яндекс. Метрика и Google Analytics
-                                li В Яндекс. Директ и Google AdWords
-                                li
+                                    span.text--info.hidden--md.hidden--lg Индивидуальный заголовок для ключей
+                                        br
                                     i.icon-ok.text--success.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Настройка систем аналитики под ключ
+                                        br
+                                    |  Яндекс. Метрика и Google Analytics
+                                li
+                                    span.text--info.hidden--md.hidden--lg Ретаргетинг
+                                        br
+                                    |  В Яндекс. Директ и Google AdWords
+                                li
+                                    span.text--info.hidden--md.hidden--lg Околоцелевые кампании
+                                        br
                                     i.icon-ok.text--success.icon-2x
-                                li 60 дней
+                                li
+                                    span.text--info.hidden--md.hidden--lg Персональный менеджер
+                                        br
+                                    i.icon-ok.text--success.icon-2x
+                                li
+                                    span.text--info.hidden--md.hidden--lg Ведение
+                                        br
+                                    |  60 дней
                         .plan__tier-footer
                             h2 22 846 Р
                             p.reasons__text
@@ -205,32 +232,56 @@ block content
                                 span  5600 Р на создание
                                 span  Landing Page
                             a.btn.btn--success.margtop20(href="#") Заказать
-                section.col-md-3.col-sm-6.col-xs-12
+                section.col-lg-3.col-sm-6.col-xs-12
                     .plan__tier.text--center.margleft10.margright10
                         .plan__tier-header
                             h5.text--uppercase Профессиональный
                         .plan__tier-body
                             ul.list--unstyled
-                                li Яндекс и Google
-                                li До 1 000
                                 li
+                                    span.text--info.hidden--md.hidden--lg Реклама в системах
+                                        br
+                                    |  Яндекс и Google
+                                li
+                                    span.text--info.hidden--md.hidden--lg Ключевых слов
+                                        br
+                                    |  До 1 000
+                                li
+                                    span.text--info.hidden--md.hidden--lg Создание уникального торгового предложения
+                                        br
                                     i.icon-cancel.text--danger.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Аудит сайта
+                                        br
                                     i.icon-ok.text--success.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Тестирование текстов
+                                        br
                                     i.icon-ok.text--success.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Индивидуальный заголовок для ключей
+                                        br
                                     i.icon-ok.text--success.icon-2x
-                                li Яндекс. Метрика
-                                    br
-                                    br
-                                li В Яндекс. Директ
-                                    br
                                 li
+                                    span.text--info.hidden--md.hidden--lg Настройка систем аналитики под ключ
+                                        br
+                                    |  Яндекс. Метрика
+                                li
+                                    span.text--info.hidden--md.hidden--lg Ретаргетинг
+                                        br
+                                    |  В Яндекс. Директ
+                                li
+                                    span.text--info.hidden--md.hidden--lg Околоцелевые кампании
+                                        br
                                     i.icon-cancel.text--danger.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Персональный менеджер
+                                        br
                                     i.icon-cancel.text--danger.icon-2x
-                                li 8 дней
+                                li
+                                    span.text--info.hidden--md.hidden--lg Ведение
+                                        br
+                                    |  8 дней
                         .plan__tier-footer
                             h2 13 543 Р
                             p.reasons__text
@@ -238,43 +289,67 @@ block content
                                 span  1000 Р на счет
                                 span  Google Adwords
                             a.btn.btn--success.margtop20(href="#") Заказать
-                section.col-md-3.col-sm-6.col-xs-12
+                section.col-lg-3.col-sm-6.col-xs-12
                     .plan__tier.text--center.margleft10.margright10
                         .plan__tier-header
                             h5.text--uppercase Стартовый
                         .plan__tier-body
                             ul.list--unstyled
-                                li Яндекс
-                                li До 300
                                 li
+                                    span.text--info.hidden--md.hidden--lg Реклама в системах
+                                        br
+                                    |  Яндекс
+                                li
+                                    span.text--info.hidden--md.hidden--lg Ключевых слов
+                                        br
+                                    |  До 300
+                                li
+                                    span.text--info.hidden--md.hidden--lg Создание уникального торгового предложения
+                                        br
                                     i.icon-cancel.text--danger.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Аудит сайта
+                                        br
                                     i.icon-cancel.text--danger.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Тестирование текстов
+                                        br
                                     i.icon-cancel.text--danger.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Индивидуальный заголовок для ключей
+                                        br
                                     i.icon-cancel.text--danger.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Настройка систем аналитики под ключ
+                                        br
                                     i.icon-cancel.text--danger.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Ретаргетинг
+                                        br
                                     i.icon-cancel.text--danger.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Околоцелевые кампании
+                                        br
                                     i.icon-cancel.text--danger.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Персональный менеджер
+                                        br
                                     i.icon-cancel.text--danger.icon-2x
                                 li
+                                    span.text--info.hidden--md.hidden--lg Ведение
+                                        br
                                     i.icon-cancel.text--danger.icon-2x
                         .plan__tier-footer
                             h2 5371 Р
                             a.btn.btn--success.margtop20(href="#") Заказать
             h2.text--danger Внимание! Акция!
-            p.reasons__text
+            p.reasons__text.margtop20
                 b ДО 12 ОКТЯБРЯ!
                 |  Закажите любой тарифный план
                 span  и получите
                     b  СКИДКУ 44%
                     |  на 10 месяцев ведения!
-            a.btn.btn--danger.margtop20(href="#") получить скидку
+            a.btn.btn--danger.margtop20.margbot10.fancybox(href="#form_sale") получить скидку
     #projects.projects
         .container
             h2.text--center.margbot50 Узнайте, как мы будем работать с вами!
@@ -283,61 +358,61 @@ block content
                     img(src="images/lines.png", alt="")
                 .col-md-3.col-sm-6.col-xs-12
                     .projects-elem.elem--success
-                        h4.reasons__text Оставляете
+                        h4.reasons__text 1. Оставляете
                             span  заявку
                 .col-md-3.col-sm-6.col-xs-12
                     .projects-elem.elem--shadow
-                        h4.reasons__text С вами
+                        h4.reasons__text 2. С вами
                             span  связывается
                             span  наш менеджер
                 .col-md-3.col-sm-6.col-xs-12
                     .projects-elem.elem--shadow
-                       h4.reasons__text Мы делаем
+                       h4.reasons__text 3. Мы делаем
                            span  прогноз продаж
                            span  для вашего бизнеса
                 .col-md-3.col-sm-6.col-xs-12
                     .projects-elem.elem--shadow
-                        h4.reasons__text Создаем стратегию
+                        h4.reasons__text 4. Создаем стратегию
                             span  продвижения
                             span  под ваш бюджет
                 .col-md-3.col-sm-6.col-xs-12
                     .projects-elem.elem--shadow
-                        h4.reasons__text В течении 7 дней
+                        h4.reasons__text 5. В течении 7 дней
                             span  мы создаем вашу
                             span  рекламную
                             span  кампанию
                 .col-md-3.col-sm-6.col-xs-12
                     .projects-elem.elem--shadow
-                        h4.reasons__text Подписываем
+                        h4.reasons__text 6. Подписываем
                             span  договор
                 .col-md-3.col-sm-6.col-xs-12
                     .projects-elem.elem--success
-                        h4.reasons__text Вы выбираете
+                        h4.reasons__text 7. Вы выбираете
                             span  тарифный план
                 .col-md-3.col-sm-6.col-xs-12
                     .projects-elem.elem--shadow
-                        h4.reasons__text Согласовываем
+                        h4.reasons__text 8. Согласовываем
                             span  прогноз
                             span  и стратегию
                 .col-md-3.col-sm-6.col-xs-12
                     .projects-elem.elem--shadow
-                        h4.reasons__text Сдаем итоговую
+                        h4.reasons__text 9. Сдаем итоговую
                             span  работу
                             span  на согласование
                 .col-md-3.col-sm-6.col-xs-12
                     .projects-elem.elem--success
-                        h4.reasons__text Вы пополняете
+                        h4.reasons__text 10. Вы пополняете
                             span  бюджет кампаний
                 .col-md-3.col-sm-6.col-xs-12
                     .projects-elem.elem--shadow
-                        h4.reasons__text Запускаем
+                        h4.reasons__text 11. Запускаем
                             span  рекламу
                 .col-md-3.col-sm-6.col-xs-12
                     .projects-elem.elem--success
-                        h4.reasons__text Вы получаете
+                        h4.reasons__text 12. Вы получаете
                             span  заказы
             .text--center
-                a.btn.btn--danger.margtop20.margbot20(href="#") Хочу обсудить свой проект!
+                a.btn.btn--danger.margtop20.margbot20.fancybox(href="#form") Хочу обсудить свой проект!
     #feedback.feedback.text--center
         .container
             h2 Остались вопросы?

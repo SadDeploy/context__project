@@ -3,7 +3,7 @@
 // ------------------------------------
 .header__top {
   background-color: $brand;
-  padding: 16px 0 13px;
+  padding: 15px 0;
   position: fixed;
   left: 0;
   right: 0;
@@ -15,18 +15,19 @@
   background-size: cover;
   padding: 68px 0 0;
   overflow: hidden;
-  margin-top: 78px;
+  margin-top: 65px;
 }
 .logo {
+  height: 33px;
   img {
     width: 100%;
   }
 }
 .phone {
   font-family: "Open Sans Condensed";
-  color: $lighter;
   font-size: 21px;
   font-weight: 700;
+  a { color: $lighter;}
 }
 .reasons__title {
   margin-bottom: 25px;

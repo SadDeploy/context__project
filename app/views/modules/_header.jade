@@ -4,20 +4,24 @@ header
             .row.between-xs.middle-xs.navbar.anchor(role="navigation")
                 .col.logo
                     a(href="/")
-                        img(src="images/logo.png", alt="Logo")
+                        img.hidden--xs.visible-md.visible-lg(src="images/logo.png", alt="Logo")
+                        img.visible--xs.hidden--sm.hidden--md.hidden--lg(src="images/logo_mobile.png", alt="Logo")
+                .col.visible-xs.hidden--md.hidden--lg
+                    a.navbar-toggle(href="#", data-toggle='collapse', data-target='.navbar-ex1-collapse')
+                        img(src="images/state.png", alt="State")
                 .col.navigation
                     include _navbar
-                .col.phone
-                    a.text--info(href="tel:88003333333")
+                .col.phone.hidden--xs.visible-md.visible-lg
+                    a(href="tel:88003333333")
                         i.icon-phone.text--success
                         |  8 (800) 333-33-33
-                .col
+                .col.hidden--xs.visible-md.hidden-lg
                     a.navbar-toggle(href="#", data-toggle='collapse', data-target='.navbar-ex1-collapse')
                         img(src="images/state.png", alt="State")
     .header__bottom
         .container.p-relative
             .row.between-xs.middle-xs.margbot50
-                .col-xs-12.col-md-9.index
+                .col-xs-12.col-md-8.index
                     h1 Экономьте до 64%
                         br
                         | на контекстной рекламе
@@ -28,7 +32,7 @@ header
                                 img(src="images/reasons__ico-1.png", alt="")
                                 h3 Максимум
                                     span  заказов
-                            p.reasons__text.text--sm Передовая настрой карекламы
+                            p.reasons__text.text--sm Передовая настройка рекламы
                                 span  находит в Интернете вообще
                                 span  всех людей, которым интересен
                                 span  ваш товар. Даже если они об
@@ -39,9 +43,11 @@ header
                                 h3 Максимум
                                     span  прибыли
                             p.reasons__text.text--sm Глубокая веб-аналитика и продви
+                                b -
                                 span  нутая оптимизация кампаний
                                 span  позволяют отшлифовать рекламу
                                 span  до выхода на макисмально воз
+                                    b -
                                 span  можную рентабельность рекламы
                         .col-xs-12.col-lg-4
                             .reasons__title.middle-xs.row
@@ -49,9 +55,10 @@ header
                                 h3 Гарантия
                                     span  результата
                             p.reasons__text.text--sm Если мы не достигнем
-                                span  показателей, указанных в
-                                span  нашем прогнозе, мы вернем
-                                span  вам деньги за настройку
+                                span  показателей, указанных
+                                span  в нашем прогнозе, мы
+                                span  вернем вам
+                                span  деньги за настройку
                     a.btn.btn--success.fancybox(href="#form") Оставить заявку
                 .background__photo-1.hidden--xs.visible-md
                     img(src="images/background__girl.png", alt="")

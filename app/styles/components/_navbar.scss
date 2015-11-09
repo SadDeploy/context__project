@@ -34,7 +34,7 @@
     overflow-y: auto;
   }
 
-  @media (min-width: $screen-md-min) {
+  @media (min-width: $screen-lg-min) {
     width: auto;
     border-top: 0;
     box-shadow: none;
@@ -113,7 +113,7 @@
     outline: 0;
   }
 
-  @media (min-width: $screen-md-min) {
+  @media (min-width: $screen-lg-min) {
     display: none;
   }
 }
@@ -133,7 +133,7 @@
     line-height: $line-height-computed;
   }
   // Uncollapse the nav
-  @media (min-width: $screen-md-min) {
+  @media (min-width: $screen-lg-min) {
     float: left;
     margin: 0;
 

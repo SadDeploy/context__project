@@ -22,6 +22,18 @@
       }
     }
   }
+  .projects-elem {
+    position: relative;
+    &:after {
+      content: '';
+      background: url("../images/arrow.png") no-repeat center;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
 }
 @media (max-width: $screen-lg-min) {
   .tabs__caption {
@@ -30,6 +42,7 @@
       padding: 0 8px;
     }
   }
+  .reasons__text b {display: none;}
 }
 @media (max-width: $screen-md-min) {
   .tabs_inner {
@@ -43,4 +56,21 @@
     }
   }
   .navigation {width: 100%;}
+  .col-xs-12:not(:last-child) .projects-elem {
+    position: relative;
+    &:after {
+      content: '';
+      background: url("../images/arrow.png") no-repeat center;
+      position: absolute;
+      bottom: -15%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 5px;
+      height: 8px;
+    }
+  }
+  .plan__tier-body li {
+    height: auto;
+  }
 }

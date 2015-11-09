@@ -159,7 +159,13 @@ input[type="search"] {
 .radio{
   label {
     &:after {
+      top: 8px;
+      left: 13px;
       @include border-radius(50%);
+      border: 3px solid transparent;
+      box-shadow: 0 0 0 6px #fff, 0 0 0 9px $brand-success;
+      height: 9px;
+      width: 9px;
     }
   }
 }
@@ -171,8 +177,7 @@ input[type="search"] {
   //background: $brand-success;
 }
 .radio input[type="radio"]:checked + label:after {
-//  background: $brand-success;
-  box-shadow: 0 0 0 6px #fff, 0 0 0 12px #888;
+  background: $brand-success;
 }
 
 .radio + .radio,

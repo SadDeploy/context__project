@@ -9,6 +9,7 @@
   right: 0;
   top: 0;
   z-index: 10;
+  height: 65px;
 }
 .header__bottom {
   background: url("../images/background.jpg") no-repeat center;
@@ -27,6 +28,7 @@
   font-family: "Open Sans Condensed";
   font-size: 21px;
   font-weight: 700;
+  padding: 4px;
   a { color: $lighter;}
 }
 .reasons__title {

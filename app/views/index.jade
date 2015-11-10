@@ -151,7 +151,7 @@ block content
             p.margbot50.reasons__text Закажите бесплатный прогноз по контекстной рекламе и наш менеджер
                 span  скурпулезно просчитает, сколько  клиентов в вашем бизнесе
                 span  и по какой цене вы можете получить с контекстной рекламы
-            a.btn.btn--danger(href="#")
+            a.btn.btn--danger.fancybox(href="#form_order")
                 i.icon-chart-line-1.icon-lg
                 | заказать прогноз
     #plans.plans.text--center
@@ -177,7 +177,7 @@ block content
                             li Ведение
                 section.col-lg-3.col-sm-6.col-xs-12
                     .plan__tier.text--center.margleft10.margright10
-                        .plan__tier-header
+                        .plan__tier-header.scroll
                             h5.text--uppercase Продвинутый
                         .plan__tier-body
                             ul.list--unstyled
@@ -234,7 +234,7 @@ block content
                             a.btn.btn--success.margtop20(href="#") Заказать
                 section.col-lg-3.col-sm-6.col-xs-12
                     .plan__tier.text--center.margleft10.margright10
-                        .plan__tier-header
+                        .plan__tier-header.scroll
                             h5.text--uppercase Профессиональный
                         .plan__tier-body
                             ul.list--unstyled
@@ -291,7 +291,7 @@ block content
                             a.btn.btn--success.margtop20(href="#") Заказать
                 section.col-lg-3.col-sm-6.col-xs-12
                     .plan__tier.text--center.margleft10.margright10
-                        .plan__tier-header
+                        .plan__tier-header.scroll
                             h5.text--uppercase Стартовый
                         .plan__tier-body
                             ul.list--unstyled
@@ -431,7 +431,8 @@ block content
                                         i.icon-mail
                                     input.form-control(type="email", placeholder="E-Mail")
                                 .form-group.capcha
-                                    img(src="images/capcha.jpg", alt="")
+                                    //img(src="images/capcha.jpg", alt="")
+                                    .g-recaptcha(data-sitekey="6LfrrxATAAAAAL14RZHhyLJLfHc1gtwSceTkrg-w")
                                 .form-group
                                     input.btn.btn--danger.btn--block(type="submit", value="Задать вопрос")
                             .col-md-7.col-xs-12
@@ -454,18 +455,18 @@ block content
             li
                 a(href="#")
                     img(src="icons/vk.png", alt="")
-            li
-                a(href="#")
-                    img(src="icons/google.png", alt="")
-            li
-                a(href="#")
-                    img(src="icons/twitter.png", alt="")
+            //li
+            //    a(href="#")
+            //        img(src="icons/google.png", alt="")
+            //li
+            //    a(href="#")
+            //        img(src="icons/twitter.png", alt="")
             li
                 a(href="#")
                     img(src="icons/facebook.png", alt="")
             li
                 a(href="#")
-                    img(src="icons/youtube.png", alt="")
-            li
-                a(href="#")
-                    img(src="icons/odnoklassniki.png", alt="")
+                    img(src="icons/GK.png", alt="")
+            //li
+            //    a(href="#")
+            //        img(src="icons/odnoklassniki.png", alt="")

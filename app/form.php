@@ -1,4 +1,20 @@
 <?php
+
+function IsChecked($chkname,$value)
+{
+	if(!empty($_POST[$chkname]))
+	{
+		foreach($_POST[$chkname] as $chkval)
+		{
+			if($chkval == $value)
+			{
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
 $sendto   = "viirall@yandex.ru";
 $name = $_POST['name1'];
 $phone = $_POST['phone1'];

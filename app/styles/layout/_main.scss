@@ -137,3 +137,6 @@
 
 @media (min-width: $screen-lg-min) {
 }
+@media (max-width: $screen-sm-min) {
+  .scroll {position: relative;background-color: #cfcfcf;}
+}

@@ -1,4 +1,50 @@
+(function($) {
+    $.fn.jScroll = function(options) {
 
+        var opts = $.extend({}, $.fn.jScroll.defaults, options);
+
+        return this.each(function() {
+            var $element = $(this);
+            var $window = $(window);
+            var locator = new location($element);
+
+            $window.scroll(function() {
+                $element
+                    .stop()
+                    .animate(locator.getMargin($window), opts.speed);
+            });
+        });
+
+        // Private
+        function location($element)
+        {
+            this.min = $element.offset().top;
+            this.originalMargin = parseInt($element.css("top"), 10) || 0;
+
+            this.getMargin = function ($window)
+            {
+                var max = $element.parent().height() - $element.outerHeight();
+                var margin = this.originalMargin;
+
+                if ($window.scrollTop() >= this.min)
+                    margin = margin + opts.top + $window.scrollTop() - this.min + 65;
+
+                if (margin > max)
+                    margin = max;
+
+                return ({"top" : margin + 'px'});
+            }
+        }
+
+    };
+
+    // Public: Default values
+    $.fn.jScroll.defaults = {
+        speed	:	0,
+        top		:	0
+    };
+
+})(jQuery);
 
 $(window).load(function() {
     // animate
@@ -47,6 +93,7 @@ $(window).load(function() {
         });
     })(jQuery);
 
+
     function initMap() {
         var myLatLng =  new google.maps.LatLng(56.994355, 40.9750783);
         // Create a map object and specify the DOM element for display.
@@ -72,11 +119,13 @@ $(window).load(function() {
 
     }
 
+    $(".scroll").jScroll();
+
     // anchor
     $('a[href*=#]').bind("click", function(e){
         var anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top - 79
+            scrollTop: $(anchor.attr('href')).offset().top - 65
         }, 1000);
         e.preventDefault();
     });

@@ -22,55 +22,84 @@
                 .checkbox
                     input(type="checkbox", name="sign1", id="sign1")
                     label(for="sign1") Подписаться на рассылку
-            .form-group.capcha
-                img(src="images/capcha.jpg", alt="")
+            //.form-group.capcha
+            //    .g-recaptcha(data-sitekey="6LfrrxATAAAAAL14RZHhyLJLfHc1gtwSceTkrg-w")
             .form-group
                 input.btn.btn--success.btn--block(type="submit", value="Оставить заявку")
 
-    #form_sale.form_feedback(style="display:none;")
-        h2.text--center.margbot40 Оставить заявку
-        .col-xs-12
-            form(action="", method="post")
-                .form-group.input-group
-                    span.input-group-addon
-                        i.icon-user
-                    input.form-control(type="text", placeholder="ФИО", name="name2")
-                .form-group.input-group
-                    span.input-group-addon
-                        i.icon-phone
-                    input.form-control(type="text", placeholder="+7", name="phone2")
-                .form-group.input-group
-                    span.input-group-addon
-                        i.icon-mail
-                    input.form-control(type="email", placeholder="E-Mail", name="mail2")
-                .form-group.input-group
-                    span.input-group-addon
-                        i.icon-mail
-                    textarea.form-control(placeholder="Сообщение", rows="4", name="message2")
-                .form-group.input-group
-                    .checkbox
-                        input(type="checkbox", name="sign2", id="sign2")
-                        label(for="sign2") Подписаться на рассылку
-                .form-group.input-group
-                    .radio
-                        input(type="radio", name="check2", id="check2", checked)
-                        label(for="check2") Получить скидку на ведение
-                .form-group.capcha
-                    img(src="images/capcha.jpg", alt="")
-                .form-group
-                    input.btn.btn--success.btn--block(type="submit", value="Оставить заявку")
+#form_order.form_feedback(style="display:none;")
+    h2.text--center.margbot40 Заказать прогноз
+    .col-xs-12
+        form(action="form.php", method="post")
+            .form-group.input-group
+                span.input-group-addon
+                    i.icon-user
+                input.form-control(type="text", placeholder="ФИО", name="name1")
+            .form-group.input-group
+                span.input-group-addon
+                    i.icon-phone
+                input.form-control(type="text", placeholder="+7", name="phone1")
+            .form-group.input-group
+                span.input-group-addon
+                    i.icon-mail
+                input.form-control(type="email", placeholder="E-Mail", name="mail1")
+            .form-group.input-group
+                span.input-group-addon
+                    i.icon-mail
+                textarea.form-control(placeholder="Сообщение", rows="4", name="message1")
+            //.form-group.input-group
+            //    .checkbox
+            //        input(type="checkbox", name="sign1", id="sign1")
+            //        label(for="sign1") Подписаться на рассылку
+            //.form-group.capcha
+            //    .g-recaptcha(data-sitekey="6LfrrxATAAAAAL14RZHhyLJLfHc1gtwSceTkrg-w")
+            .form-group
+                input.btn.btn--success.btn--block(type="submit", value="Заказать")
 
-    #call.form_feedback(style="display:none;")
-        h2.text--center.margbot40 Заказать звонок
-        .col-xs-12
-            form(action="", method="post")
-                .form-group.input-group
-                    span.input-group-addon
-                        i.icon-user
-                    input.form-control(type="text", placeholder="ФИО", required, name="name3")
-                .form-group.input-group
-                    span.input-group-addon
-                        i.icon-phone
-                    input.form-control(type="text", placeholder="+7", required, name="phone3")
-                .form-group
-                    input.btn.btn--success.btn--block(type="submit", value="Заказать")
+#form_sale.form_feedback(style="display:none;")
+    h2.text--center.margbot40 Оставить заявку
+    .col-xs-12
+        form(action="", method="post")
+            .form-group.input-group
+                span.input-group-addon
+                    i.icon-user
+                input.form-control(type="text", placeholder="ФИО", name="name2")
+            .form-group.input-group
+                span.input-group-addon
+                    i.icon-phone
+                input.form-control(type="text", placeholder="+7", name="phone2")
+            .form-group.input-group
+                span.input-group-addon
+                    i.icon-mail
+                input.form-control(type="email", placeholder="E-Mail", name="mail2")
+            .form-group.input-group
+                span.input-group-addon
+                    i.icon-mail
+                textarea.form-control(placeholder="Сообщение", rows="4", name="message2")
+            .form-group.input-group
+                .checkbox
+                    input(type="checkbox", name="sign2", id="sign2")
+                    label(for="sign2") Подписаться на рассылку
+            .form-group.input-group
+                .radio
+                    input(type="radio", name="check2", id="check2", checked)
+                    label(for="check2") Получить скидку на ведение
+            //.form-group.capcha
+            //    .g-recaptcha(data-sitekey="6LfrrxATAAAAAL14RZHhyLJLfHc1gtwSceTkrg-w")
+            .form-group
+                input.btn.btn--success.btn--block(type="submit", value="Оставить заявку")
+
+#call.form_feedback(style="display:none;")
+    h2.text--center.margbot40 Заказать звонок
+    .col-xs-12
+        form(action="", method="post")
+            .form-group.input-group
+                span.input-group-addon
+                    i.icon-user
+                input.form-control(type="text", placeholder="ФИО", required, name="name3")
+            .form-group.input-group
+                span.input-group-addon
+                    i.icon-phone
+                input.form-control(type="text", placeholder="+7", required, name="phone3")
+            .form-group
+                input.btn.btn--success.btn--block(type="submit", value="Заказать")
